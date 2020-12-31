@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Heads</title>
+    <link rel="shortcut icon" href="./img/ic_maths.png" type="image/x-icon">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/quiz.css">
+    <!-- FontAweome CDN Link for Icons-->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <!-- start Quiz button -->
+    <div class="home">
+        <div class="flex flex-col text-center w-full mb-8 pt-12">
+            <h2 class="text-sm text-white tracking-widest font-medium title-font mb-1">MATHEMATICS</h2>
+            <h1 class="sm:text-4xl text-white text-4xl font-medium title-font mb-4">Get Started With Maths Quiz</h1>
+            <p class="lg:w-2/3 text-white mx-auto leading-relaxed text-lg">This is a quiz which will help you test your skills and you can learn from your mistakes.✌</p>
+        </div>
+        <div class="flex mb-4 justify-center">
+            <div class="w-16 h-1 rounded-full bg-white inline-flex"></div>
+        </div>
+        <div class="start_btn">
+            <button>Start Quiz</button>
+        </div>
+        <div class="readmore_btn mt-16">
+            <button onclick="smoothScroll(document.getElementById('more'))"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.122 24l-4.122-4 8-8-8-8 4.122-4 11.878 12z"/></svg></button>
+        </div>
+    </div>
+    <section id="more" class="text-gray-600 body-font">
+        <div class="container px-5 pt-4 mx-auto">
+          <div class="flex flex-col text-center w-full mb-10">
+            <h2 class="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">MATHEMATICS</h2>
+            <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900">More Information On Quiz</h1>
+          </div>
+          <div class="flex flex-wrap -m-4">
+            <div class="p-4 md:w-1/3">
+              <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+                <div class="flex items-center mb-3">
+                  <div class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                      <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                    </svg>
+                  </div>
+                  <h2 class="text-gray-900 text-lg title-font font-medium">1st Question</h2>
+                </div>
+                <div class="flex-grow">
+                  <p class="leading-relaxed text-base">We have an = 3 + 4n <br> ∴ an+1 = 3 + 4(n + 1) = 7 + 4n <br> ∴ d = an+1 – an = (7 + 4n) – (3 + 4n) <br> = 7 – 3 = 4</p>
+                  <a class="mt-3 text-indigo-500 inline-flex items-center" href="#link">Learn More
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                      <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 md:w-1/3">
+              <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+                <div class="flex items-center mb-3">
+                  <div class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                      <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                      <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                  </div>
+                  <h2 class="text-gray-900 text-lg title-font font-medium">2nd Question</h2>
+                </div>
+                <div class="flex-grow">
+                  <p class="leading-relaxed text-base"> Since p, q, r, s are in A.P. <br> ∴ (q – p) = (r – q) = (s – r) <br> = d (common difference)</p>
+                  <a class="mt-3 text-indigo-500 inline-flex items-center" href="#link">Learn More
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                      <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 md:w-1/3">
+              <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+                <div class="flex items-center mb-3">
+                  <div class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                      <circle cx="6" cy="6" r="3"></circle>
+                      <circle cx="6" cy="18" r="3"></circle>
+                      <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
+                    </svg>
+                  </div>
+                  <h2 class="text-gray-900 text-lg title-font font-medium">3rd Question</h2>
+                </div>
+                <div class="flex-grow">
+                  <p class="leading-relaxed text-base">Let three numbers be a – d, a, a + d <br> ∴ a – d +a + a + d = 9 ⇒ 3a = 9 ⇒ a = 3
+                    Also (a – d) . a . (a + d) = 24 ⇒ (3 -d) .3(3 + d) = 24 ⇒ 9 – d² = 8 ⇒ d² = 9 – 8 = 1 <br> ∴ d = ± 1 <br>
+                    Hence numbers are 2, 3, 4 or 4, 3, 2
+                    </p>
+                  <a class="mt-3 text-indigo-500 inline-flex items-center" href="#link">Learn More
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                      <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 md:w-1/3">
+              <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+                <div class="flex items-center mb-3">
+                  <div class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                      <circle cx="6" cy="6" r="3"></circle>
+                      <circle cx="6" cy="18" r="3"></circle>
+                      <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
+                    </svg>
+                  </div>
+                  <h2 class="text-gray-900 text-lg title-font font-medium">4th Question</h2>
+                </div>
+                <div class="flex-grow">
+                  <p class="leading-relaxed text-base">Here a = 7, d = 12-7 = 5 <br> ∴ an-1 = a + [(n – 1) – l]d <br> = 7 + [(n – 1) -1] (5) <br> = 7 + (n – 2)5 <br> = 7 + 5n – 10 = 5M – 3</p>
+                  <a class="mt-3 text-indigo-500 inline-flex items-center" href="#link">Learn More
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                      <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 md:w-1/3">
+              <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+                <div class="flex items-center mb-3">
+                  <div class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                      <circle cx="6" cy="6" r="3"></circle>
+                      <circle cx="6" cy="18" r="3"></circle>
+                      <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
+                    </svg>
+                  </div>
+                  <h2 class="text-gray-900 text-lg title-font font-medium">5th Question</h2>
+                </div>
+                <div class="flex-grow">
+                  <p class="leading-relaxed text-base">Here a = 5, d = 2 – 5 = -3 <br> an = a + (n – 1)d <br> = 5 + (n – 1) (-3) <br> = 5 – 3n + 3 = 8 – 3n</p>
+                  <a class="mt-3 text-indigo-500 inline-flex items-center" href="#link">Learn More
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                      <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 md:w-1/3">
+              <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+                <div class="flex items-center mb-3">
+                  <div class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                      <circle cx="6" cy="6" r="3"></circle>
+                      <circle cx="6" cy="18" r="3"></circle>
+                      <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
+                    </svg>
+                  </div>
+                  <h2 class="text-gray-900 text-lg title-font font-medium">6th Question</h2>
+                </div>
+                <div class="flex-grow">
+                  <p class="leading-relaxed text-base">Here l = -1000, d = -10 – (-5) = – 5 <br>∴ 10th term from the end = l – (n – 1 )d <br> = -1000 – (10 – 1) (-5) <br> = -1000 + 45 = -955</p>
+                  <a class="mt-3 text-indigo-500 inline-flex items-center" href="#link">Learn More
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                      <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 md:w-1/3">
+              <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+                <div class="flex items-center mb-3">
+                  <div class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                      <circle cx="6" cy="6" r="3"></circle>
+                      <circle cx="6" cy="18" r="3"></circle>
+                      <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
+                    </svg>
+                  </div>
+                  <h2 class="text-gray-900 text-lg title-font font-medium">7th Question</h2>
+                </div>
+                <div class="flex-grow">
+                  <p class="leading-relaxed text-base">Here an = 3n + 4 <br> ∴ a1 = 7, a2 – 10, a3 = 13 <br> ∴ a= 7, d = 10 – 7 = 3 <br> ∴ S12 = 122[2 × 7 + (12 – 1) ×3] <br> = 6[14 + 33] = 6 × 47 = 282</p>
+                  <a class="mt-3 text-indigo-500 inline-flex items-center" href="#link">Learn More
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                      <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 md:w-1/3">
+              <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+                <div class="flex items-center mb-3">
+                  <div class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                      <circle cx="6" cy="6" r="3"></circle>
+                      <circle cx="6" cy="18" r="3"></circle>
+                      <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
+                    </svg>
+                  </div>
+                  <h2 class="text-gray-900 text-lg title-font font-medium">8th Question</h2>
+                </div>
+                <div class="flex-grow">
+                  <p class="leading-relaxed text-base">All two digit odd numbers are 11,13,15,… 99, which are in A.P. Since there are 90 two digit numbers of which 45 numbers are odd and 45 numbers are even <br> ∴ Sum = 452[11 + 99] = 452 × 110 <br> = 45 × 55 = 2475</p>
+                  <a class="mt-3 text-indigo-500 inline-flex items-center" href="#link">Learn More
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                      <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 md:w-1/3">
+              <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+                <div class="flex items-center mb-3">
+                  <div class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                      <circle cx="6" cy="6" r="3"></circle>
+                      <circle cx="6" cy="18" r="3"></circle>
+                      <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
+                    </svg>
+                  </div>
+                  <h2 class="text-gray-900 text-lg title-font font-medium">9th Question</h2>
+                </div>
+                <div class="flex-grow">
+                  <p class="leading-relaxed text-base"> Required Sum = 1 + 3 + 5 + … + upto n terms. <br> Here a = 1, d = 3 – 1 = 2 Sum = n2[2 × 1 + (n – 1) × 2] <br> = n2[2 + 2n – 2] = n2 × 2n = n² <br> ∴ Sum = 452[11 + 99] = 452 × 110 = 45 × 55 = 2475</p>
+                  <a class="mt-3 text-indigo-500 inline-flex items-center" href="#link">Learn More
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                      <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 md:w-1/3">
+              <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+                <div class="flex items-center mb-3">
+                  <div class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                      <circle cx="6" cy="6" r="3"></circle>
+                      <circle cx="6" cy="18" r="3"></circle>
+                      <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
+                    </svg>
+                  </div>
+                  <h2 class="text-gray-900 text-lg title-font font-medium">10th Question</h2>
+                </div>
+                <div class="flex-grow">
+                  <p class="leading-relaxed text-base">Multiples of n from 1 to n² are n × 1, n × 2, n × 3, …, m× n <br> ∴ There are n numbers Thus, the number of mutiples of n which lie between n and n² is (n – 2) leaving first and last in the given list: Total numbers are (n – 2). </p>
+                  <a class="mt-3 text-indigo-500 inline-flex items-center" href="#link">Learn More
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                      <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- Info Box -->
+    <div class="info_box">
+        <div class="info-title"><span>Some Rules of this Quiz</span></div>
+        <div class="info-list">
+            <div class="info">1. You will have only <span>15 seconds</span> per each question.</div>
+            <div class="info">2. Once you select your answer, it can't be undone.</div>
+            <div class="info">3. You can't select any option once time goes off.</div>
+            <div class="info">4. You can't exit from the Quiz while you're playing.</div>
+            <div class="info">5. You'll get points on the basis of your correct answers.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">Awesome Quiz Application</div>
+            <div class="timer">
+                <div class="time_left_txt">Time Left</div>
+                <div class="timer_sec">15</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+                <!-- Here I've inserted question from JavaScript -->
+            </div>
+            <div class="option_list">
+                <!-- Here I've inserted options from JavaScript -->
+            </div>
+        </section>
+
+        <!-- footer of Quiz Box -->
+        <footer>
+            <div class="total_que">
+                <!-- Here I've inserted Question Count Number from JavaScript -->
+            </div>
+            <button class="next_btn">Next Que</button>
+        </footer>
+    </div>
+
+    <!-- Result Box -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">You've completed the Quiz!</div>
+        <div class="score_text">
+            <!-- Here I've inserted Score Result from JavaScript -->
+        </div>
+        <div class="buttons">
+            <button class="restart">Replay Quiz</button>
+            <button class="quit">Quit Quiz</button>
+        </div>
+    </div>
+
+    <!-- Inside this JavaScript file I've inserted Questions and Options only -->
+    <script src="./js/questions.js"></script>
+
+    <!-- Inside this JavaScript file I've coded all Quiz Codes -->
+    <script src="./js/script.js"></script>
+    <script src="./js/index.js"></script>
+
+</body>
+</html>

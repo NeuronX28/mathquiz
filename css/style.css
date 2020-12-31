@@ -1,0 +1,43 @@
+/* importing google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.home {
+    height: 100vh;
+}
+
+
+#ourteam {
+    height: fit-content;
+}
+
+a{
+    cursor: pointer;
+}
+
+iframe {
+    height: 100vh;
+}
+
+.myBtn {
+    display: none;
+    position: fixed;
+    bottom: 15px;
+    float: right;
+    left: 92vw;
+    z-index: 99;
+}
